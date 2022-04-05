@@ -4,5 +4,6 @@
 
 //classes
 #include "item.h"
+#include "Customer.h"
 
 using namespace as std;
