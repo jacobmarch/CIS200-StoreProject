@@ -24,8 +24,13 @@ class transaction {
             }
             cout << "Number of Items: " << numItems << endl;
             cout << "Amount: $" << amount << endl;
+            cout << "Customer ID: " << customerID << endl;
+        }
+        void setCustomer(int id){
+            customerID = id;
         }
     private:
+        int customerID;
         double amount;
         int day;
         int month;

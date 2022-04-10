@@ -7,6 +7,9 @@ class item {
       int getID(){
         return id;
       }
+      int setID(int idNum){
+        id = idNum;
+      }
       double getPrice(){
         return price; 
       }
