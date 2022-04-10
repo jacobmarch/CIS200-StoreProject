@@ -7,4 +7,4 @@
 #include "customer.h"
 #include "transaction.h"
 
-using namespace as std;
+using namespace std;
