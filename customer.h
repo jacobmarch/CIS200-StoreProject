@@ -1,6 +1,6 @@
 #include "Header.h"
 
-using namespace::std;
+using namespace std;
 
 class customer {
     public:
