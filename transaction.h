@@ -9,10 +9,11 @@ class transaction {
         void setReturn(){
             isReturn = true;
         }
-        void setDate(int d, int m, int y){
+        void setInfo(int d, int m, int y, int id){
             day = d;
             month = m;
             year = y;
+            customerID = id;
         }
         void returnInfo(){
             cout << "Date of Transaction: " << month << "/" << day << "/" << year << endl;
@@ -25,9 +26,6 @@ class transaction {
             cout << "Number of Items: " << numItems << endl;
             cout << "Amount: $" << amount << endl;
             cout << "Customer ID: " << customerID << endl;
-        }
-        void setCustomer(int id){
-            customerID = id;
         }
     private:
         int customerID;
