@@ -16,8 +16,17 @@ class item {
       void setPrice(double p){
         price = p; 
       }
+      
+      int getStock(){
+         return stock;
+      }
+   
+      void setStock(int s){
+         stock = s;
+      }
   
   protected:
     int id;
+    int stock;
     double price;
 }
