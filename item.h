@@ -1,4 +1,5 @@
 #include "Header.h"
+#include<string>
 
 using namespace std;
 
@@ -24,9 +25,18 @@ class item {
       void setStock(int s){
          stock = s;
       }
+   
+      string getName(){
+         return name;
+      }
+   
+      void setName(string n){
+         name = n;
+      }
   
   protected:
     int id;
     int stock;
     double price;
+    string name;
 }
