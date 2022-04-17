@@ -1,3 +1,5 @@
+#ifndef ITEM_H
+#define ITEM_H
 #include "Header.h"
 #include<string>
 
@@ -40,3 +42,5 @@ class item {
     double price;
     string name;
 }
+
+#endif // !ITEM_H
