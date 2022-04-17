@@ -12,6 +12,4 @@
 #include "transaction.h"
 #include "shopping.h"
 
-using namespace std;
-
-#endif
+#endif // !HEADER_H
