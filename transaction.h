@@ -1,4 +1,6 @@
-#include "Header.h"\
+#ifndef TRANSACTION_H
+#define TRANSACTION_H
+#include "Header.h"
 
 using namespace std;
 
@@ -38,4 +40,6 @@ class transaction {
         int numItems;
         bool isReturn = false;
 
-}
+};
+
+#endif //!TRANSACTION_H
