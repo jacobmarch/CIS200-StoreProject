@@ -1,3 +1,6 @@
+#ifndef HEADER_H
+#define HEADER_H
+
 #include <vector>
 #include <string>
 #include <iostream>
@@ -10,3 +13,5 @@
 #include "shopping.h"
 
 using namespace std;
+
+#endif
