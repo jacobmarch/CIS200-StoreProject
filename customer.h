@@ -1,3 +1,5 @@
+#ifndef CUSTOMER_H
+#define CUSTOMER_H
 #include "Header.h"
 
 using namespace std;
@@ -25,3 +27,5 @@ class customer {
         int numberOfPurchases;
         string customerName;
 };
+
+#endif // !CUSTOMER_H
