@@ -1,3 +1,5 @@
+#ifndef SHOPPING_H
+#define SHOPPING_H
 #include "Header.h"
 
 
@@ -341,3 +343,5 @@ void shopping::receipt() {
 	cout << "\n\n\n________________________________________________";
 	cout << "\n Total amount: " << amount << "\n\n\n";
 }
+
+#endif // !SHOPPING_H
