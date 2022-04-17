@@ -41,6 +41,6 @@ class item {
     int stock;
     double price;
     string name;
-}
+};
 
 #endif // !ITEM_H
