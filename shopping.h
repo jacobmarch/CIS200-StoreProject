@@ -326,18 +326,16 @@ void shopping::receipt() {
 		cout << "\n\n\t\t\t_________________RECEIPT__________________\n";
 		cout << "\nProduct No\t Product Name\t Quantity\t Price\t Amount\n";
 
-		for (int i = 0; i < c; ++i) {
+		for (int i = 0; i < c; i++) {
 			data.open("database.txt", ios::in);
 			data >> pcode >> pname >> price;
 
-			while (!data.eof()) {
 				if (pcode == arrc[i]) {
 					amount = price * arrq[i];
-					total += amount;
-					cout << endl << pcode <<"\t\t" << pname << "\t\t" << arrq[i] << "\t\t" << amount;
+					total = total + amount;
+					cout << endl << pcode << "\t\t" << pname << "\t\t" << arrq[i] << "\t\t" << price << "\t\t" << amount;
 				}
 				data >> pcode >> pname >> price;
-			}
 		}
 		data.close();
 	}
