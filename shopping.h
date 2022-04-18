@@ -311,7 +311,7 @@ void shopping::receipt() {
 			cout << "\n\nEnter product quantity: ";
 			cin >> arrq[c];
 			
-			for (int i = 0; i << c; ++i) {
+			for (int i = 0; i < c; ++i) {
 				if (arrc[c] == arrc[i]) {
 					cout << "\n\n Duplicate product code. Please try again.";
 					goto m;
@@ -333,6 +333,7 @@ void shopping::receipt() {
 			while (!data.eof()) {
 				if (pcode == arrc[i]) {
 					amount = price * arrq[i];
+					total += amount;
 					cout << endl << pcode <<"\t\t" << pname << "\t\t" << arrq[i] << "\t\t" << amount;
 				}
 				data >> pcode >> pname >> price;
@@ -341,7 +342,7 @@ void shopping::receipt() {
 		data.close();
 	}
 	cout << "\n\n\n________________________________________________";
-	cout << "\n Total amount: " << amount << "\n\n\n";
+	cout << "\n Total amount: " << total << "\n\n\n";
 }
 
 #endif // !SHOPPING_H
