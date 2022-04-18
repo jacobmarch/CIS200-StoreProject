@@ -330,12 +330,14 @@ void shopping::receipt() {
 			data.open("database.txt", ios::in);
 			data >> pcode >> pname >> price;
 
+				while (!data.eof()) {
 				if (pcode == arrc[i]) {
 					amount = price * arrq[i];
 					total = total + amount;
 					cout << endl << pcode << "\t\t" << pname << "\t\t" << arrq[i] << "\t\t" << price << "\t\t" << amount;
 				}
 				data >> pcode >> pname >> price;
+			}
 		}
 		data.close();
 	}
